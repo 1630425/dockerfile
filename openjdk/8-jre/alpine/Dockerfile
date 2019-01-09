@@ -4,7 +4,7 @@
 # PLEASE DO NOT EDIT IT DIRECTLY.
 #
 
-FROM registry.cn-hangzhou.aliyuncs.com/alpine-3-6/base
+FROM chengt/base:alpine-3.6
 
 # A few reasons for installing distribution-provided OpenJDK:
 #

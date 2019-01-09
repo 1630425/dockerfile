@@ -6,7 +6,7 @@
 #
 
 # Pull base image.
-FROM dockerfile/ubuntu
+FROM chengt/base:ubuntu-16.04
 
 # Install Java.
 RUN \
