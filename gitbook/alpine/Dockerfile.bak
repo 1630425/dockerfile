@@ -1,0 +1,14 @@
+FROM chengt/nodejs:latest
+MAINTAINER chengt 1630425@qq.com
+
+RUN mkdir -p ~/gitbooks/gitbook/gitbook-documentation
+WORKDIR ~/gitbooks/gitbook/gitbook-documentation
+RUN npm install gitbook-cli -g
+RUN gitbook init
+RUN npm init -y
+RUN sed -i '/"test":/a\    "s": "gitbook install && gitbook build && gitbook serve"' package.json
+RUN sed -i '/"test":/d' package.json
+
+EXPOSE 4000
+
+CMD npm run s
