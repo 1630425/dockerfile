@@ -1,4 +1,4 @@
-FROM chengt/nodejs:latest
+FROM chengt/gitbook:3-alpine
 MAINTAINER chengt 1630425@qq.com
 
 RUN npm install gitbook-cli -g
