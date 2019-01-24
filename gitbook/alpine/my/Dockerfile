@@ -1,8 +1,6 @@
 FROM chengt/gitbook:3-alpine
 MAINTAINER chengt 1630425@qq.com
 
-RUN npm install gitbook-cli -g
-
 RUN apk add --no-cache openssh
 RUN ssh-keygen  -t rsa -P '' -f ~/.ssh/id_rsa
 RUN git config --global user.email "1630425@qq.com"
